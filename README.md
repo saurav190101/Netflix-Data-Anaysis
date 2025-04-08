@@ -14,7 +14,7 @@ In this project, I analyzed Netflix data to extract key insights using Python. T
 
 - Most-watched genres
   
-  ```
+ ```
 genre_typemovies=df.loc[df['type']=='Movie']
 count_genre = genre_typemovies['genre'].str.split(', ').explode()  #convert into  list and after explode(in each row)each row
 count_genre=count_genre.value_counts().reset_index()
@@ -27,8 +27,9 @@ plt.xticks(rotation=90)
 plt.tight_layout()
 plt.title('Top Genre Movies',fontsize=14)
 
-plt.show()   
+plt.show()
 ``` 
+
 - Year-wise content production
 - Trends in TV Shows vs Movies
 - Duration patterns
