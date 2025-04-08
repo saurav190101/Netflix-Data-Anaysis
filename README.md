@@ -13,6 +13,22 @@ Exploratory Data Analysis &amp; Visualizion of Netflix
 In this project, I analyzed Netflix data to extract key insights using Python. The analysis covers:
 
 - Most-watched genres
+  
+  ```
+genre_typemovies=df.loc[df['type']=='Movie']
+count_genre = genre_typemovies['genre'].str.split(', ').explode()  #convert into  list and after explode(in each row)each row
+count_genre=count_genre.value_counts().reset_index()
+
+count_genre=pd.DataFrame(count_genre)
+
+plt.figure(figsize=(16,8))
+sns.barplot(y='genre', x='count', data=count_genre, palette='viridis')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.title('Top Genre Movies',fontsize=14)
+
+plt.show()   
+``` 
 - Year-wise content production
 - Trends in TV Shows vs Movies
 - Duration patterns
