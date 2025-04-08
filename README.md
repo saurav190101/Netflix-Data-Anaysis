@@ -1,7 +1,7 @@
 # Netflix-Data-Anaysis
 Exploratory Data Analysis &amp; Visualizion of Netflix
 
-![logo]()
+![logo](https://github.com/saurav190101/Netflix-Data-Anaysis/blob/main/photo-1574375927938-d5a98e8ffe85.avif)
 
 
 # 📺 Netflix Data Analysis Project
