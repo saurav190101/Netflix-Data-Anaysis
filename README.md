@@ -1,8 +1,6 @@
 # Netflix-Data-Anaysis
 Exploratory Data Analysis &amp; Visualizion of Netflix
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1H27Uwr9pjxc9CWZf0sj_Bgfb5tzUqtez?usp=sharing)
-
 
 ![logo](https://github.com/saurav190101/Netflix-Data-Anaysis/blob/main/photo-1574375927938-d5a98e8ffe85.avif)
 
@@ -46,6 +44,9 @@ filter_data=filter_data.sort_values(by='count',ascending=False).head(5)
 filter_data
 px.pie(filter_data,names='country',values='count' ,title='Top movies and series by countries')
 ```
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1H27Uwr9pjxc9CWZf0sj_Bgfb5tzUqtez?usp=sharing)
+
 
 ## 📁 Dataset
 
